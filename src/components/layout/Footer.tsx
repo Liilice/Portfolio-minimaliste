@@ -1,8 +1,8 @@
 export default function Footer() {
     const year = new Date().getFullYear();
     return (
-      <footer className="py-12 px-8 md:px-20 lg:px-32 border-t border-slate-200 text-center md:text-left">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+      <footer className="mb-16 sm:mb-0 px-6 py-6 md:px-20 lg:px-10 xl:px-32 border-t border-slate-200 text-center md:text-left">
+        <div className="flex flex-row justify-between items-center gap-6">
           <p className="text-sm text-slate-400">
             © {year} Alice Zheng.
           </p>

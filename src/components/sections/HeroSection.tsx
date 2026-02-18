@@ -13,7 +13,7 @@ export default function HeroSection() {
           </p>
 
           <h1 className="text-2xl sm:text-3xl md:text-5xl xl:text-7xl font-bold text-slate-900 leading-[1.1] mb-6 sm:mb-8">
-            Créer des expériences numériques fluides.
+            Rendre le numérique plus simple, plus clair, plus utile.
           </h1>
 
           <p className="text-base sm:text-lg lg:text-xl text-slate-600 mb-4 sm:mb-10 leading-relaxed ">

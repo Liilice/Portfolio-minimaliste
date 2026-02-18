@@ -16,8 +16,8 @@ Mise en place d’un processus d’amélioration continue basé sur l’analyse 
     company: "F CONNECTION",
     date: "01/2026 — PRESENT",
     description: `Maintenance & optimisation no-code
-Implémentation d’améliorations fonctionnelles ayant généré +18 % d’engagement utilisateur
-Optimisation SEO (+25 % de trafic organique)`,
+Améliorations du site web (UX/UI, performance) avec IONOS
+Optimisation SEO`,
     tags: ["Web Site", "No-code"],
   },
   {

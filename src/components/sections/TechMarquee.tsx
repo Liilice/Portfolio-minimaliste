@@ -43,9 +43,9 @@ export default function TechMarquee() {
       className="px-6 py-10 md:px-20 lg:px-10 xl:px-32 sm:py-20 border-y border-slate-200  bg-slate-50"
       id="tech"
     >
-      <h2 className=" ext-4xl font-bold mb-6 uppercase tracking-[0.3em] text-slate-400">
+      {/* <h2 className=" ext-4xl font-bold mb-6 uppercase tracking-[0.3em] text-slate-400">
         Core Technologies
-      </h2>
+      </h2> */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 overflow-x-auto py-4">
         {Object.entries(TECHNOLOGIES).map(
           ([key, { img, alt, items, color }]) => (
