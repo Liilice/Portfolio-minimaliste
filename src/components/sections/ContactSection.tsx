@@ -31,8 +31,11 @@ export default function ContactSection() {
     }
   };
   return (
-    <section className="px-6 py-10 md:px-20 lg:px-10 xl:px-32 sm:py-20 bg-white/30" id="contact">
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+    <section
+      className="px-6 py-10 md:px-20 lg:px-10 xl:px-32 sm:py-20 bg-white/30"
+      id="contact"
+    >
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div>
           <h2 className="text-4xl font-bold text-slate-900 mb-4 lg:mb-6">
             Collaborons ensemble.
@@ -43,7 +46,7 @@ export default function ContactSection() {
             discuter.
           </p>
 
-          <div className="space-y-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start gap-5">
             <InfoRow
               icon="alternate_email"
               label="Email"
@@ -51,15 +54,9 @@ export default function ContactSection() {
               type="email"
             />
             <InfoRow
-              icon="location_on"
-              label="Location"
-              value="Paris, France"
-              type="text"
-            />
-            <InfoRow
               icon="message"
               label="Whatsapp"
-              value="Me contacter rapidement via WhatsApp"
+              value="Réponse rapide"
               type="whatsapp"
             />
           </div>
@@ -121,33 +118,48 @@ function InfoRow({
   type?: "email" | "whatsapp" | "text";
 }) {
   return (
-    <div className="flex items-center gap-4">
-      <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
-        <span className="material-icons">{icon}</span>
-      </div>
+    <div className="flex flex-col items-start gap-2 bg-slate-50 py-3.5 px-6 rounded-2xl hover:bg-[#D1E4FD] w-full">
+      <span className="material-icons">{icon}</span>
       <div>
         <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">
           {label}
         </p>
 
         {type === "email" && (
-          <a href={`mailto:${value}`} className="text-lg font-medium">
-            {value}
-          </a>
+          <div className="flex flex-col gap-1">
+            <a href={`mailto:${value}`} className="text-lg font-medium">
+              {value}
+            </a>
+            <a
+              href={`mailto:${value}`}
+              className="mt-4 bg-primary rounded hover:bg-primary/90 transition-all font-bold relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-black after:transition-transform after:duration-300 hover:after:scale-x-100 flex items-center gap-6 mb-5 w-fit"
+            >
+              Envoyez moi un e-mail{" "}
+              <span className="material-icons text-sm">arrow_forward</span>
+            </a>
+          </div>
         )}
 
         {type === "whatsapp" && (
-          <a
-            href="https://wa.me/33652422142"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-lg font-medium"
-          >
-            {value}
-          </a>
+          <div className="flex flex-col gap-1">
+            <a
+              href="https://wa.me/33652422142"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-medium"
+            >
+              {value}
+            </a>
+            <a
+              href="https://wa.me/33652422142"
+              className="mt-4 bg-primary rounded hover:bg-primary/90 transition-all font-bold relative after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-full after:origin-left after:scale-x-0 after:bg-black after:transition-transform after:duration-300 hover:after:scale-x-100 flex items-center gap-6 mb-5 w-fit"
+            >
+              Discuter sur WhatsApp
+              <span className="material-icons text-sm">arrow_forward</span>
+            </a>
+          </div>
         )}
 
-        {type === "text" && <p className="text-lg font-medium">{value}</p>}
       </div>
     </div>
   );

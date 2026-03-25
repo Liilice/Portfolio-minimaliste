@@ -32,7 +32,7 @@ const TECHNOLOGIES = {
   realtime: {
     img: ToolsSvg,
     alt: "Outils",
-    items: ["Socket.io"],
+    items: ["Github", "Docker", "Figma"],
     color: "#64748B",
   },
 };

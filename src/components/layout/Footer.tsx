@@ -9,7 +9,7 @@ export default function Footer() {
   
           <div className="flex gap-8 text-sm font-bold text-slate-400">
             <a
-              className="hover:text-primary transition-colors"
+              className="hover:text-black transition-colors"
               href="https://www.linkedin.com/in/alicezhenglilice/"
               target="_blank"
               rel="noopener noreferrer"
@@ -17,7 +17,7 @@ export default function Footer() {
               LinkedIn
             </a>
             <a
-              className="hover:text-primary transition-colors"
+              className="hover:text-black transition-colors"
               href="https://github.com/Liilice"
               target="_blank"
               rel="noopener noreferrer"

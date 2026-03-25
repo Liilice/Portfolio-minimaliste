@@ -14,7 +14,7 @@ Mise en place d’un processus d’amélioration continue basé sur l’analyse 
   {
     title: "Développeure Web - Freelance",
     company: "F CONNECTION",
-    date: "01/2026 — PRESENT",
+    date: "01/2026 — 02/2026",
     description: `Maintenance & optimisation no-code
 Améliorations du site web (UX/UI, performance) avec IONOS
 Optimisation SEO`,

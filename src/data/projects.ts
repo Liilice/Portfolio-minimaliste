@@ -30,7 +30,7 @@ const PROJECTS: Project[] = [
     category: "Web",
     title: "Intranet",
     description:
-      "Ce projet m’a permis de découvrir Django en développant un intranet pour une auto-école. L’application centralise la gestion des utilisateurs (secrétaires, instructeurs, élèves, admin), des plannings et des réservations de créneaux, ainsi que le suivi des formations, afin d’optimiser l’organisation au quotidien.",
+    "Développement d’un intranet pour une auto-école afin de centraliser la gestion des utilisateurs, des plannings et des réservations. L’objectif était de simplifier l’organisation quotidienne via une interface unifiée. Réalisé avec Django pour structurer la logique métier et gérer efficacement les rôles et permissions.",
     images: [
       { url: IntranetAccueil, alt: "Intranet accueil" },
       { url: IntranetCreneau, alt: "Intranet reservation de creneau" },
@@ -44,8 +44,8 @@ const PROJECTS: Project[] = [
     category: "Design",
     title: "Refonte Design – Fconnection",
     description:
-      "Objectif : créer une identité digitale plus luxueuse, moderne et premium, alignée avec l’image et les ambitions de Fconnection. Le design proposé est épuré et élégant, porté par une palette sophistiquée, des visuels haut de gamme et une typographie soignée, pour une expérience cohérente et impactante.",
-    stack: ["Figma"],
+  "Refonte complète de l’identité digitale de Fconnection avec une approche orientée expérience utilisateur et positionnement premium. Le design met l’accent sur la lisibilité, la hiérarchie visuelle et une esthétique cohérente pour renforcer l’image de marque.",
+   stack: ["Figma"],
     images: [
       { url: FConnectionAccueil, alt: "FConnection Accueil" },
       { url: FConnectionAccommodation, alt: "FConnection Accommodation" },
@@ -58,8 +58,8 @@ const PROJECTS: Project[] = [
     category: "Mobile",
     title: "HealthFlow",
     description:
-      "Application mobile qui accompagne l’utilisateur vers un mode de vie plus sain. Elle calcule les calories en fonction du poids des aliments, additionne les apports sur la journée et les compare au métabolisme de base. L’objectif : visualiser ses repas et vérifier le respect des apports recommandés.",
-    stack: ["React Native", "Expo", "Supabase"],
+  "Application mobile de suivi nutritionnel permettant de calculer et analyser les apports caloriques journaliers. L’objectif est d’aider l’utilisateur à mieux comprendre ses habitudes alimentaires via une visualisation claire des données. Développée en React Native avec un backend Supabase pour la gestion des données en temps réel.",
+  stack: ["React Native", "Expo", "Supabase"],
     images: [
       { url: HealthFlowAccueil, alt: "HealthFlow accueil" },
       { url: HealthFlowAddItem, alt: "HealthFlow add item" },
@@ -73,8 +73,8 @@ const PROJECTS: Project[] = [
     category: "Mobile",
     title: "Omniscience Mobile",
     description:
-      "Application mobile qui rend l’accès au savoir simple et personnalisé, du débutant à l’expert. Elle génère des cours et des quiz ludiques grâce à une IA développée en Python, avec une structuration des connaissances. Le projet vise une plateforme d’apprentissage efficace, au-delà d’une simple recherche web.",
-    stack: ["Python", "Neo4j", "React Native", "NestJS", "AI"],
+  "Application mobile d’apprentissage personnalisé exploitant une IA pour générer des cours et des évaluations adaptés au niveau de l’utilisateur. Le projet s’appuie sur une structuration des connaissances (Neo4j) et une API en Python pour proposer une expérience éducative évolutive et interactive.",
+  stack: ["Python", "Neo4j", "React Native", "NestJS", "AI"],
     images: [
       { url: OmniscienceMobileAccueil, alt: "Omniscience mobile accueil" },
       { url: OmniscienceMobileCourse, alt: "Omniscience mobile course" },
@@ -91,8 +91,8 @@ const PROJECTS: Project[] = [
     category: "Web",
     title: "Omniscience Web",
     description:
-      "Landing page conçue pour présenter Omniscience, une application mobile dédiée à l’apprentissage personnalisé grâce à l’intelligence artificielle. L’objectif est de valoriser le concept, ses fonctionnalités clés et l’univers du projet, avec une interface claire, moderne et responsive, pensée pour convertir et donner envie de tester.",
-    stack: ["React", "Tailwind CSS"],
+  "Landing page conçue pour présenter et valoriser Omniscience, une application d’apprentissage basée sur l’IA. L’objectif est de clarifier le produit, mettre en avant ses fonctionnalités clés et optimiser la conversion grâce à une interface moderne et responsive.",
+  stack: ["React", "Tailwind CSS"],
     images: [
       { url: OmniscienceWebLandingPage, alt: "Omniscience web landing page" },
     ],
@@ -102,8 +102,8 @@ const PROJECTS: Project[] = [
     category: "Web",
     title: "Portfolio - univers Pokemon",
     description:
-      "Portfolio de fin d’année imaginé dans l’univers Pokémon, mêlant créativité et compétences techniques. Le site propose une navigation structurée, une expérience immersive et des sections claires (présentation, projets, contact). L’objectif : mettre en valeur mon profil, mes réalisations et mon identité à travers un thème fort.",
-    stack: ["React", "Tailwind CSS", "NestJS", "PostgreSQL"],
+  "Portfolio interactif développé autour de l’univers Pokémon pour présenter mes projets de manière immersive. L’objectif était de combiner identité visuelle forte et structure claire, tout en mettant en avant mes compétences full-stack à travers une application complète.",
+  stack: ["React", "Tailwind CSS", "NestJS", "PostgreSQL"],
     images: [
       { url: PortfolioPokemonAboutMe, alt: "Portfolio Pokemon about me" },
       { url: PortfolioPokemonContact, alt: "Portfolio Pokemon contact" },
@@ -116,8 +116,8 @@ const PROJECTS: Project[] = [
     category: "Mobile",
     title: "SmartMeal",
     description:
-      "Application mobile qui propose des idées de repas et génère automatiquement la liste d’ingrédients nécessaire. Elle permet de partager la liste par SMS à ses contacts et aide à localiser un supermarché à proximité pour faire ses courses. L’objectif : gagner du temps et simplifier l’organisation des repas.",
-    stack: ["React Native", "API Externe"],
+  "Application mobile facilitant la planification des repas en générant automatiquement des recettes et listes de courses. Elle intègre des fonctionnalités de partage et de localisation pour simplifier l’organisation quotidienne. Développée en React Native avec intégration d’API externes.",
+  stack: ["React Native", "API Externe"],
     images: [
       { url: SmartMealAccueil, alt: "SmartMeal accueil" },
       { url: SmartMealDetails, alt: "SmartMeal details" },
