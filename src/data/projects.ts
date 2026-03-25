@@ -1,6 +1,7 @@
 import IntranetAccueil from "../assets/project/intranet/accueil.png";
 import IntranetCreneau from "../assets/project/intranet/creneau.png";
 import IntranetGestionnaire from "../assets/project/intranet/gestionnaire.png";
+import FConnectionApperçu from "../assets/project/fconnection/apperçu.png";
 import FConnectionAccueil from "../assets/project/fconnection/Our Team.jpg";
 import FConnectionAccommodation from "../assets/project/fconnection/accommodation.jpg";
 import FConnectionServices from "../assets/project/fconnection/Services-fun Activities.jpg";
@@ -21,7 +22,7 @@ import PortfolioPokemonContact from "../assets/project/portfolioPokemon/contact.
 import PortfolioPokemonProject from "../assets/project/portfolioPokemon/project.png";
 import SmartMealAccueil from "../assets/project/smartMeal/accueil.png";
 import SmartMealDetails from "../assets/project/smartMeal/details.png";
-import SmartMealListRecipe from "../assets/project/smartMeal/listRecipe.jpg";
+import SmartMealListRecipe from "../assets/project/smartMeal/listRecipe.png";
 
 import type { Project } from "../components/ui/ProjectCard";
 
@@ -30,7 +31,24 @@ const PROJECTS: Project[] = [
     category: "Web",
     title: "Intranet",
     description:
-    "Développement d’un intranet pour une auto-école afin de centraliser la gestion des utilisateurs, des plannings et des réservations. L’objectif était de simplifier l’organisation quotidienne via une interface unifiée. Réalisé avec Django pour structurer la logique métier et gérer efficacement les rôles et permissions.",
+      "Développement d’un intranet pour une auto-école afin de centraliser la gestion des utilisateurs, des plannings et des réservations. L’objectif était de simplifier l’organisation quotidienne via une interface unifiée. Réalisé avec Django pour structurer la logique métier et gérer efficacement les rôles et permissions.",
+    more: [
+      {
+        title: "Contexte",
+        content:
+          "Concevoir un outil interne capable de simplifier la gestion quotidienne d’une auto-école et de centraliser les opérations essentielles.",
+      },
+      {
+        title: "Problème",
+        content:
+          "La gestion des utilisateurs, des créneaux et du suivi administratif peut rapidement devenir complexe lorsqu’elle est répartie sur plusieurs supports ou peu structurée.",
+      },
+      {
+        title: "Solution",
+        content:
+          "Développer un intranet unifié permettant de gérer les rôles, les plannings, les réservations et le suivi des formations dans une seule interface.",
+      },
+    ],
     images: [
       { url: IntranetAccueil, alt: "Intranet accueil" },
       { url: IntranetCreneau, alt: "Intranet reservation de creneau" },
@@ -44,9 +62,27 @@ const PROJECTS: Project[] = [
     category: "Design",
     title: "Refonte Design – Fconnection",
     description:
-  "Refonte complète de l’identité digitale de Fconnection avec une approche orientée expérience utilisateur et positionnement premium. Le design met l’accent sur la lisibilité, la hiérarchie visuelle et une esthétique cohérente pour renforcer l’image de marque.",
-   stack: ["Figma"],
+      "Refonte complète de l’identité digitale de Fconnection avec une approche orientée expérience utilisateur et positionnement premium. Le design met l’accent sur la lisibilité, la hiérarchie visuelle et une esthétique cohérente pour renforcer l’image de marque.",
+    more: [
+      {
+        title: "Contexte",
+        content:
+          "Repenser l’univers visuel de Fconnection afin d’aligner son image digitale avec un positionnement plus haut de gamme.",
+      },
+      {
+        title: "Problème",
+        content:
+          "Une identité visuelle peu marquée ou insuffisamment cohérente peut limiter la perception de qualité et l’impact de la marque.",
+      },
+      {
+        title: "Solution",
+        content:
+          "Créer une refonte orientée expérience utilisateur, avec une hiérarchie visuelle plus claire, une esthétique premium et une meilleure cohérence globale.",
+      },
+    ],
+    stack: ["Figma"],
     images: [
+      { url: FConnectionApperçu, alt: "FConnection apperçu" },
       { url: FConnectionAccueil, alt: "FConnection Accueil" },
       { url: FConnectionAccommodation, alt: "FConnection Accommodation" },
       { url: FConnectionServices, alt: "FConnection Services" },
@@ -56,16 +92,33 @@ const PROJECTS: Project[] = [
   },
   {
     category: "Mobile",
-    title: "HealthFlow",
+    title: "HealthFlow — Application mobile de suivi nutritionnel",
     description:
-  "Application mobile de suivi nutritionnel permettant de calculer et analyser les apports caloriques journaliers. L’objectif est d’aider l’utilisateur à mieux comprendre ses habitudes alimentaires via une visualisation claire des données. Développée en React Native avec un backend Supabase pour la gestion des données en temps réel.",
-  stack: ["React Native", "Expo", "Supabase"],
+      "Application mobile de suivi nutritionnel permettant d’enregistrer les repas, calculer les apports caloriques et les comparer aux besoins journaliers. Développée en React Native avec Supabase, elle vise une expérience claire, pratique et orientée accompagnement utilisateur.",
+    more: [
+      {
+        title: "Contexte",
+        content:
+          "Concevoir une application mobile utile pour suivre simplement son alimentation au quotidien.",
+      },
+      {
+        title: "Problème",
+        content:
+          "Les données nutritionnelles sont souvent dispersées ou peu lisibles pour un usage régulier.",
+      },
+      {
+        title: "Solution",
+        content:
+          "Centraliser les repas, automatiser le calcul calorique et offrir une lecture claire des apports journaliers.",
+      },
+    ],
+    stack: ["React Native", "Expo", "Supabase"],
     images: [
+      { url: HealthFlowSplashscreen, alt: "HealthFlow splashscreen" },
       { url: HealthFlowAccueil, alt: "HealthFlow accueil" },
       { url: HealthFlowAddItem, alt: "HealthFlow add item" },
       { url: HealthFlowCalorieKnow, alt: "HealthFlow calorie know" },
       { url: HealthFlowDetailOfJourney, alt: "HealthFlow detail of journey" },
-      { url: HealthFlowSplashscreen, alt: "HealthFlow splashscreen" },
     ],
     githubLink: "https://github.com/Liilice/HealthFlow",
   },
@@ -73,8 +126,25 @@ const PROJECTS: Project[] = [
     category: "Mobile",
     title: "Omniscience Mobile",
     description:
-  "Application mobile d’apprentissage personnalisé exploitant une IA pour générer des cours et des évaluations adaptés au niveau de l’utilisateur. Le projet s’appuie sur une structuration des connaissances (Neo4j) et une API en Python pour proposer une expérience éducative évolutive et interactive.",
-  stack: ["Python", "Neo4j", "React Native", "NestJS", "AI"],
+      "Application mobile d’apprentissage personnalisé exploitant une IA pour générer des cours et des évaluations adaptés au niveau de l’utilisateur. Le projet s’appuie sur une structuration des connaissances (Neo4j) et une API en Python pour proposer une expérience éducative évolutive et interactive.",
+    more: [
+      {
+        title: "Contexte",
+        content:
+          "Imaginer une application mobile capable de rendre l’apprentissage plus accessible, progressif et personnalisé selon le niveau de chaque utilisateur.",
+      },
+      {
+        title: "Problème",
+        content:
+          "Les ressources éducatives en ligne sont souvent génériques, peu adaptées au niveau réel de l’apprenant et insuffisamment structurées.",
+      },
+      {
+        title: "Solution",
+        content:
+          "Développer une application exploitant une IA pour générer des contenus pédagogiques et des évaluations, en s’appuyant sur une structuration des connaissances pour personnaliser l’expérience.",
+      },
+    ],
+    stack: ["Python", "Neo4j", "React Native", "NestJS", "AI"],
     images: [
       { url: OmniscienceMobileAccueil, alt: "Omniscience mobile accueil" },
       { url: OmniscienceMobileCourse, alt: "Omniscience mobile course" },
@@ -91,8 +161,25 @@ const PROJECTS: Project[] = [
     category: "Web",
     title: "Omniscience Web",
     description:
-  "Landing page conçue pour présenter et valoriser Omniscience, une application d’apprentissage basée sur l’IA. L’objectif est de clarifier le produit, mettre en avant ses fonctionnalités clés et optimiser la conversion grâce à une interface moderne et responsive.",
-  stack: ["React", "Tailwind CSS"],
+      "Landing page conçue pour présenter et valoriser Omniscience, une application d’apprentissage basée sur l’IA. L’objectif est de clarifier le produit, mettre en avant ses fonctionnalités clés et optimiser la conversion grâce à une interface moderne et responsive.",
+    more: [
+      {
+        title: "Contexte",
+        content:
+          "Créer une vitrine web capable de présenter clairement Omniscience et de valoriser son positionnement autour de l’apprentissage assisté par IA.",
+      },
+      {
+        title: "Problème",
+        content:
+          "Un produit innovant peut être difficile à comprendre rapidement sans une interface de présentation claire, structurée et orientée conversion.",
+      },
+      {
+        title: "Solution",
+        content:
+          "Concevoir une landing page moderne et responsive mettant en avant les bénéfices, les fonctionnalités clés et l’identité du projet.",
+      },
+    ],
+    stack: ["React", "Tailwind CSS"],
     images: [
       { url: OmniscienceWebLandingPage, alt: "Omniscience web landing page" },
     ],
@@ -102,8 +189,25 @@ const PROJECTS: Project[] = [
     category: "Web",
     title: "Portfolio - univers Pokemon",
     description:
-  "Portfolio interactif développé autour de l’univers Pokémon pour présenter mes projets de manière immersive. L’objectif était de combiner identité visuelle forte et structure claire, tout en mettant en avant mes compétences full-stack à travers une application complète.",
-  stack: ["React", "Tailwind CSS", "NestJS", "PostgreSQL"],
+      "Portfolio interactif développé autour de l’univers Pokémon pour présenter mes projets de manière immersive. L’objectif était de combiner identité visuelle forte et structure claire, tout en mettant en avant mes compétences full-stack à travers une application complète.",
+    more: [
+      {
+        title: "Contexte",
+        content:
+          "Concevoir un portfolio capable de refléter ma personnalité tout en présentant mes projets dans une interface forte visuellement.",
+      },
+      {
+        title: "Problème",
+        content:
+          "Un portfolio trop standard peut manquer d’impact et rendre difficile la différenciation auprès d’un recruteur ou d’un visiteur.",
+      },
+      {
+        title: "Solution",
+        content:
+          "Créer une expérience immersive inspirée de l’univers Pokémon, tout en conservant une structure claire pour mettre en valeur mes compétences et réalisations.",
+      },
+    ],
+    stack: ["React", "Tailwind CSS", "NestJS", "PostgreSQL"],
     images: [
       { url: PortfolioPokemonAboutMe, alt: "Portfolio Pokemon about me" },
       { url: PortfolioPokemonContact, alt: "Portfolio Pokemon contact" },
@@ -116,8 +220,25 @@ const PROJECTS: Project[] = [
     category: "Mobile",
     title: "SmartMeal",
     description:
-  "Application mobile facilitant la planification des repas en générant automatiquement des recettes et listes de courses. Elle intègre des fonctionnalités de partage et de localisation pour simplifier l’organisation quotidienne. Développée en React Native avec intégration d’API externes.",
-  stack: ["React Native", "API Externe"],
+      "Application mobile facilitant la planification des repas en générant automatiquement des recettes et listes de courses. Elle intègre des fonctionnalités de partage et de localisation pour simplifier l’organisation quotidienne. Développée en React Native avec intégration d’API externes.",
+    more: [
+      {
+        title: "Contexte",
+        content:
+          "Concevoir une application mobile pratique pour aider l’utilisateur à organiser plus facilement ses repas et ses courses.",
+      },
+      {
+        title: "Problème",
+        content:
+          "La planification des repas demande du temps et implique souvent plusieurs actions séparées : chercher des idées, noter les ingrédients et préparer les achats.",
+      },
+      {
+        title: "Solution",
+        content:
+          "Centraliser la découverte de recettes, la génération de listes d’ingrédients, le partage par SMS et la localisation d’un supermarché à proximité dans une seule application.",
+      },
+    ],
+    stack: ["React Native", "API Externe"],
     images: [
       { url: SmartMealAccueil, alt: "SmartMeal accueil" },
       { url: SmartMealDetails, alt: "SmartMeal details" },
