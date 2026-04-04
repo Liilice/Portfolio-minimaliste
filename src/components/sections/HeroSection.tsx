@@ -9,7 +9,9 @@ export default function HeroSection() {
       <div className="grid lg:grid-cols-2 gap-12 items-center w-full">
         <div className="order-1  lg:order-1">
           <p className="text-primary font-medium tracking-widest uppercase text-sm mb-4">
-            Développeuse Full-Stack web &amp; mobile
+            Développeuse Fullstack (React / Node.js)
+            <br />
+            Spécialisée mobile & UX orientée produit
           </p>
 
           <h1 className="text-2xl sm:text-3xl md:text-5xl xl:text-7xl font-bold text-slate-900 leading-[1.1] mb-6 sm:mb-8">

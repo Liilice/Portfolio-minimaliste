@@ -1,7 +1,7 @@
 import IntranetAccueil from "../assets/project/intranet/accueil.png";
 import IntranetCreneau from "../assets/project/intranet/creneau.png";
 import IntranetGestionnaire from "../assets/project/intranet/gestionnaire.png";
-import FConnectionApperçu from "../assets/project/fconnection/apperçu.png";
+import FConnectionAppercu from "../assets/project/fconnection/appercu.png";
 import FConnectionAccueil from "../assets/project/fconnection/Our Team.jpg";
 import FConnectionAccommodation from "../assets/project/fconnection/accommodation.jpg";
 import FConnectionServices from "../assets/project/fconnection/Services-fun Activities.jpg";
@@ -16,79 +16,62 @@ import OmniscienceMobileAccueil from "../assets/project/omniscience/mobile/accue
 import OmniscienceMobileCourse from "../assets/project/omniscience/mobile/course.png";
 import OmniscienceMobileEvaluation from "../assets/project/omniscience/mobile/evaluation.png";
 import OmniscienceMobileProfil from "../assets/project/omniscience/mobile/profil.png";
-import OmniscienceWebLandingPage from "../assets/project/omniscience/web/landingPage.png";
 import PortfolioPokemonAboutMe from "../assets/project/portfolioPokemon/aboutMe.png";
 import PortfolioPokemonContact from "../assets/project/portfolioPokemon/contact.png";
 import PortfolioPokemonProject from "../assets/project/portfolioPokemon/project.png";
 import SmartMealAccueil from "../assets/project/smartMeal/accueil.png";
 import SmartMealDetails from "../assets/project/smartMeal/details.png";
 import SmartMealListRecipe from "../assets/project/smartMeal/listRecipe.png";
+import ChoraleAccueil from "../assets/project/choraleDeBonsChoeurs/accueil.png";
+import ChoraleConcerts from "../assets/project/choraleDeBonsChoeurs/concerts.png";
+import ChoraleAchat from "../assets/project/choraleDeBonsChoeurs/achat.png";
+import ChoraleSumup from "../assets/project/choraleDeBonsChoeurs/sumup.png";
 
 import type { Project } from "../components/ui/ProjectCard";
 
 const PROJECTS: Project[] = [
   {
     category: "Web",
-    title: "Intranet",
+    title: "Chorale de Bons Chœurs — Billetterie en ligne",
     description:
-      "Développement d’un intranet pour une auto-école afin de centraliser la gestion des utilisateurs, des plannings et des réservations. L’objectif était de simplifier l’organisation quotidienne via une interface unifiée. Réalisé avec Django pour structurer la logique métier et gérer efficacement les rôles et permissions.",
+      "Développement d’une plateforme complète de billetterie en ligne pour la Chorale de Bons Chœurs, permettant la réservation et le paiement sécurisé de places pour des concerts. Le projet intègre un système de paiement, une gestion des commandes et un panel administrateur pour le contrôle des billets.",
     more: [
       {
         title: "Contexte",
         content:
-          "Concevoir un outil interne capable de simplifier la gestion quotidienne d’une auto-école et de centraliser les opérations essentielles.",
+          "La chorale avait besoin d’un système simple et fiable pour vendre des billets en ligne, gérer les réservations et contrôler les entrées lors des événements.",
       },
       {
         title: "Problème",
         content:
-          "La gestion des utilisateurs, des créneaux et du suivi administratif peut rapidement devenir complexe lorsqu’elle est répartie sur plusieurs supports ou peu structurée.",
+          "L’absence de solution digitale entraînait une gestion manuelle des réservations, difficile à suivre et sujette aux erreurs, notamment lors du contrôle des billets le jour du concert.",
       },
       {
         title: "Solution",
         content:
-          "Développer un intranet unifié permettant de gérer les rôles, les plannings, les réservations et le suivi des formations dans une seule interface.",
+          "Mise en place d’une billetterie web complète avec paiement sécurisé (SumUp), génération de tickets, envoi automatique d’emails de confirmation, et un panel administrateur permettant de valider les billets en temps réel et suivre les entrées.",
       },
+      {
+        title: "Fonctionnalités clés",
+        content:
+          "Réservation en ligne, paiement sécurisé, génération de tickets, envoi d’emails automatisés, interface d’administration avec gestion et validation des billets, gestion des quantités et suivi des participants.",
+      },
+    ],
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Firebase (Firestore)",
+      "SumUp API",
+      "Nodemailer",
     ],
     images: [
-      { url: IntranetAccueil, alt: "Intranet accueil" },
-      { url: IntranetCreneau, alt: "Intranet reservation de creneau" },
-      { url: IntranetGestionnaire, alt: "Intranet gestionnaire" },
+      { url: ChoraleAccueil, alt: "Page de réservation des concerts" },
+      { url: ChoraleConcerts, alt: "Liste des concerts" },
+      { url: ChoraleAchat, alt: "Pop-up d'achat" },
+      { url: ChoraleSumup, alt: "Intégration de sumup" },
     ],
-    stack: ["Django", "SQLite", "HTML", "CSS", "JavaScript"],
-    onlineLink: "https://intranet.guillaume-reboullet.com/",
-    githubLink: "https://github.com/Liilice/Intranet",
-  },
-  {
-    category: "Design",
-    title: "Refonte Design – Fconnection",
-    description:
-      "Refonte complète de l’identité digitale de Fconnection avec une approche orientée expérience utilisateur et positionnement premium. Le design met l’accent sur la lisibilité, la hiérarchie visuelle et une esthétique cohérente pour renforcer l’image de marque.",
-    more: [
-      {
-        title: "Contexte",
-        content:
-          "Repenser l’univers visuel de Fconnection afin d’aligner son image digitale avec un positionnement plus haut de gamme.",
-      },
-      {
-        title: "Problème",
-        content:
-          "Une identité visuelle peu marquée ou insuffisamment cohérente peut limiter la perception de qualité et l’impact de la marque.",
-      },
-      {
-        title: "Solution",
-        content:
-          "Créer une refonte orientée expérience utilisateur, avec une hiérarchie visuelle plus claire, une esthétique premium et une meilleure cohérence globale.",
-      },
-    ],
-    stack: ["Figma"],
-    images: [
-      { url: FConnectionApperçu, alt: "FConnection apperçu" },
-      { url: FConnectionAccueil, alt: "FConnection Accueil" },
-      { url: FConnectionAccommodation, alt: "FConnection Accommodation" },
-      { url: FConnectionServices, alt: "FConnection Services" },
-      { url: FConnectionTravel, alt: "FConnection Travel" },
-      { url: FConnectionDestinations, alt: "FConnection Destinations" },
-    ],
+    onlineLink: "https://chorale-de-bons-choeurs.vercel.app/",
   },
   {
     category: "Mobile",
@@ -121,6 +104,38 @@ const PROJECTS: Project[] = [
       { url: HealthFlowDetailOfJourney, alt: "HealthFlow detail of journey" },
     ],
     githubLink: "https://github.com/Liilice/HealthFlow",
+  },
+  {
+    category: "Design",
+    title: "Refonte Design – Fconnection",
+    description:
+      "Refonte complète de l’identité digitale de Fconnection avec une approche orientée expérience utilisateur et positionnement premium. Le design met l’accent sur la lisibilité, la hiérarchie visuelle et une esthétique cohérente pour renforcer l’image de marque.",
+    more: [
+      {
+        title: "Contexte",
+        content:
+          "Repenser l’univers visuel de Fconnection afin d’aligner son image digitale avec un positionnement plus haut de gamme.",
+      },
+      {
+        title: "Problème",
+        content:
+          "Une identité visuelle peu marquée ou insuffisamment cohérente peut limiter la perception de qualité et l’impact de la marque.",
+      },
+      {
+        title: "Solution",
+        content:
+          "Créer une refonte orientée expérience utilisateur, avec une hiérarchie visuelle plus claire, une esthétique premium et une meilleure cohérence globale.",
+      },
+    ],
+    stack: ["Figma"],
+    images: [
+      { url: FConnectionAppercu, alt: "FConnection apperçu" },
+      { url: FConnectionAccueil, alt: "FConnection Accueil" },
+      { url: FConnectionAccommodation, alt: "FConnection Accommodation" },
+      { url: FConnectionServices, alt: "FConnection Services" },
+      { url: FConnectionTravel, alt: "FConnection Travel" },
+      { url: FConnectionDestinations, alt: "FConnection Destinations" },
+    ],
   },
   {
     category: "Mobile",
@@ -159,31 +174,34 @@ const PROJECTS: Project[] = [
   },
   {
     category: "Web",
-    title: "Omniscience Web",
+    title: "Intranet",
     description:
-      "Landing page conçue pour présenter et valoriser Omniscience, une application d’apprentissage basée sur l’IA. L’objectif est de clarifier le produit, mettre en avant ses fonctionnalités clés et optimiser la conversion grâce à une interface moderne et responsive.",
+      "Développement d’un intranet pour une auto-école afin de centraliser la gestion des utilisateurs, des plannings et des réservations. L’objectif était de simplifier l’organisation quotidienne via une interface unifiée. Réalisé avec Django pour structurer la logique métier et gérer efficacement les rôles et permissions.",
     more: [
       {
         title: "Contexte",
         content:
-          "Créer une vitrine web capable de présenter clairement Omniscience et de valoriser son positionnement autour de l’apprentissage assisté par IA.",
+          "Concevoir un outil interne capable de simplifier la gestion quotidienne d’une auto-école et de centraliser les opérations essentielles.",
       },
       {
         title: "Problème",
         content:
-          "Un produit innovant peut être difficile à comprendre rapidement sans une interface de présentation claire, structurée et orientée conversion.",
+          "La gestion des utilisateurs, des créneaux et du suivi administratif peut rapidement devenir complexe lorsqu’elle est répartie sur plusieurs supports ou peu structurée.",
       },
       {
         title: "Solution",
         content:
-          "Concevoir une landing page moderne et responsive mettant en avant les bénéfices, les fonctionnalités clés et l’identité du projet.",
+          "Développer un intranet unifié permettant de gérer les rôles, les plannings, les réservations et le suivi des formations dans une seule interface.",
       },
     ],
-    stack: ["React", "Tailwind CSS"],
     images: [
-      { url: OmniscienceWebLandingPage, alt: "Omniscience web landing page" },
+      { url: IntranetAccueil, alt: "Intranet accueil" },
+      { url: IntranetCreneau, alt: "Intranet reservation de creneau" },
+      { url: IntranetGestionnaire, alt: "Intranet gestionnaire" },
     ],
-    onlineLink: "https://omniscience.guillaume-reboullet.com/",
+    stack: ["Django", "SQLite", "HTML", "CSS", "JavaScript"],
+    onlineLink: "https://intranet.guillaume-reboullet.com/",
+    githubLink: "https://github.com/Liilice/Intranet",
   },
   {
     category: "Web",

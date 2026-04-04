@@ -3,8 +3,17 @@ import ExperienceCard, { type Experience } from "../ui/ExperienceCard";
 const EXPERIENCE: Experience[] = [
   {
     title: "Développeure Web - Freelance",
+    company: "Association - Chorale de Bons Chœurs",
+    date: "23/03/2026 — 04/01/2026",
+    description: `Mise en place d’une billetterie web complète avec paiement sécurisé (SumUp)
+Envoi automatique d’emails de confirmation
+Mise en place d'un panel administrateur permettant de valider les billets en temps réel et suivre les entrées.`,
+    tags: ["Web Site"],
+  },
+  {
+    title: "Développeure Web - Freelance",
     company: "Whitecoats",
-    date: "11/2026 — PRESENT",
+    date: "01/2026 — 02/2026",
     description: `Refonte & optimisation produit
 Pilotage de la refonte complète du site web (UX/UI, performance)
 Amélioration de la vitesse de chargement des vidéos de +45 %
