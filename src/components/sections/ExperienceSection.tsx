@@ -2,7 +2,7 @@ import ExperienceCard, { type Experience } from "../ui/ExperienceCard";
 
 const EXPERIENCE: Experience[] = [
   {
-    title: "Développeure Web - Freelance",
+    title: "Développeuse Web - Freelance",
     company: "Association - Chorale de Bons Chœurs",
     date: "23/03/2026 — 04/01/2026",
     description: `Mise en place d’une billetterie web complète avec paiement sécurisé (SumUp)
@@ -11,7 +11,7 @@ Mise en place d'un panel administrateur permettant de valider les billets en tem
     tags: ["Web Site"],
   },
   {
-    title: "Développeure Web - Freelance",
+    title: "Développeuse Web - Freelance",
     company: "Whitecoats",
     date: "01/2026 — 02/2026",
     description: `Refonte & optimisation produit
@@ -21,7 +21,7 @@ Mise en place d’un processus d’amélioration continue basé sur l’analyse 
     tags: ["Web Site"],
   },
   {
-    title: "Développeure Web - Freelance",
+    title: "Développeuse Web - Freelance",
     company: "F CONNECTION",
     date: "01/2026 — 02/2026",
     description: `Maintenance & optimisation no-code
